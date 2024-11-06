@@ -1,0 +1,96 @@
+/* General Styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-right: 230px;
+  }
+  .menu-logo img {
+    max-width: 100%;
+  }
+  .desktop-menu {
+    display: flex;
+  }
+  .button-container {
+    margin-left: auto;
+    margin-left: 40px;
+  }
+  
+  /* Login Button Styling */
+  .login-button {
+    width: 120px;
+    height: 45px;
+    background-color: #0669ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  .login-button:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Mobile Menu Toggle Icon */
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+    color: #0779E4;
+    transition: transform 0.3s;
+  }
+  
+  /* Mobile Menu Popup */
+  .mobile-menu-popup {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    background: #0779E4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    animation: slideIn 0.3s ease-in-out;
+    z-index: 10;
+  }
+  
+  .mobile-menu-popup ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .mobile-menu-popup ul li {
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .mobile-menu-popup ul li a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
+  /* Keyframes for Menu Animation */
+  @keyframes slideIn {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .desktop-menu {
+      display: none;
+    }
+    .menu-icon {
+      display: block;
+    }
+    .button-container {
+      display: none;
+
+    }
+  }
+  
